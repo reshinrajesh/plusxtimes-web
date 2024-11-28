@@ -1,0 +1,165 @@
+/* Default Styles (Light Mode) */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+}
+
+.icon {
+    font-size: 80px;
+    color: #ff9800;
+    margin-bottom: 20px;
+}
+
+.footer {
+    font-size: 14px;
+    color: #777;
+    margin-top: 20px;
+}
+
+/* Social Media Icons Styling */
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icon {
+    font-size: 30px;
+    margin: 0 10px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #ff9800;
+}
+
+/* Email Contact Section */
+.email-contact p {
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+}
+
+.email-contact .email-link {
+    font-weight: bold;
+    color: #ff9800;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.email-contact .email-link:hover {
+    color: #333;
+}
+
+/* Light/Dark Mode Toggle with Icons */
+.mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.mode-toggle i {
+    font-size: 30px;
+    color: #333;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+#mode-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 80px;
+    height: 25px;
+    background: #ddd;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode .container {
+    background-color: #444;
+}
+
+body.dark-mode .social-icon {
+    color: #fff;
+}
+
+body.dark-mode .footer {
+    color: #ccc;
+}
+
+body.dark-mode .mode-toggle i {
+    color: #fff;
+}
+
+body.dark-mode h1, body.dark-mode p, body.dark-mode .footer {
+    color: white;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .mode-toggle {
+        bottom: 15px;
+    }
+
+    #mode-slider {
+        width: 60px;
+    }
+
+    .mode-toggle i {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .mode-toggle {
+        bottom: 10px;
+    }
+
+    #mode-slider {
+        width: 50px;
+    }
+
+    .mode-toggle i {
+        font-size: 20px;
+    }
+}
